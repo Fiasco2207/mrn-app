@@ -6,28 +6,26 @@ import styles from './style';
 
 import PlayerWidget from '../PlayerWidget';
 
-export type  AlbumHeaderProps={
+export type AlbumHeaderProps = {
     album: Album;
 }
 
 
-const ALbumHeader = (props: AlbumHeaderProps)=> {
-    const{album}=props;
-    return(
+const ALbumHeader = (props: AlbumHeaderProps) => {
+    const { album } = props;
+    return (
         <View style={styles.container}>
-            <Image source={{uri:album.imageUri}} style={styles.image} />
+            <Image source={{ uri: album.imageUri }} style={styles.image} />
             <Text style={styles.name}> {album.name} </Text>
             <View style={styles.creatorContainer} >
-                <Text style={{color: colors.white}}>By {album.by}</Text>
+                <Text style={{ color: colors.white }}>By {album.by}</Text>
                 <Text style={styles.likes}>{album.numberOfLikes} Likes </Text>
             </View>
-            <TouchableOpacity onPress={()=> <PlayerWidget />}>
             <View style={styles.button}>
-                <Text style={styles.buttonText}>PLAY</Text>  
+                <Text style={styles.buttonText}>Enjoy Listening</Text>
             </View>
-            </TouchableOpacity>
         </View>
-        )
+    )
 }
 
 export default ALbumHeader;
