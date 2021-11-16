@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Text, Image, View, TouchableOpacity } from 'react-native';
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
 import { API, graphqlOperation } from 'aws-amplify';
+import MusicControl from 'react-native-music-control';
 
 import styles from './styles';
 import { Song } from "../../types";
@@ -43,6 +44,7 @@ const PlayerWidget = () => {
   const playCurrentSong = async () => {
     if (sound) {
       await sound.unloadAsync();
+
     }
 
     const { sound: newSound } = await Sound.createAsync(
@@ -53,6 +55,14 @@ const PlayerWidget = () => {
 
     setSound(newSound)
   }
+
+  /* const setNotifications = () => {
+    MusicControl.setNowPlaying({
+      title: song.title,
+      artwork: song.imageUri,
+      artist: song.artistsHeadline
+    })
+  } */
 
   useEffect(() => {
     if (song) {
@@ -65,7 +75,7 @@ const PlayerWidget = () => {
       return;
     }
     if (isPlaying) {
-      await sound.stopAsync();
+      await sound.pauseAsync();
     } else {
       await sound.playAsync();
     }

@@ -9325,6 +9325,11 @@
   "resolved" "https://registry.npmjs.org/react-native-linear-gradient/-/react-native-linear-gradient-2.5.6.tgz"
   "version" "2.5.6"
 
+"react-native-music-control@^0.4.13":
+  "integrity" "sha512-x2+TEI/d9e3XiDJ2W53fd4cpCGo1InAJXO7PYrtHamVv28OINSlTxgO7toJ/C0Cde1vjOE1XLd/JU3yWjWd22w=="
+  "resolved" "https://registry.npmjs.org/react-native-music-control/-/react-native-music-control-0.4.13.tgz"
+  "version" "0.4.13"
+
 "react-native-paper@^4.10.0":
   "integrity" "sha512-Pt8deqdyVAaxvgtlTFzCzAnjGSaqjZK4FirozHXenBEXhMuv+4aFKie9Og1plsdVl9bXcqtnfubm44mWRcszgg=="
   "resolved" "https://registry.npmjs.org/react-native-paper/-/react-native-paper-4.10.0.tgz"
@@ -9385,7 +9390,7 @@
     "prop-types" "^15.6.0"
     "react-timer-mixin" "^0.13.4"
 
-"react-native@*", "react-native@^0.0.0-0 || ^0.60.6 || ^0.61.5 || ^0.62.2 || ^0.63.2 || ^0.64.0 || ^0.65.0 || ^0.66.0 || 1000.0.0", "react-native@>= 0.30.0", "react-native@>=0.42.0", "react-native@>=0.55", "react-native@>=0.56", "react-native@>=0.59", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz":
+"react-native@*", "react-native@^0.0.0-0 || ^0.60.6 || ^0.61.5 || ^0.62.2 || ^0.63.2 || ^0.64.0 || ^0.65.0 || ^0.66.0 || 1000.0.0", "react-native@>= 0.30.0", "react-native@>=0.40.0", "react-native@>=0.42.0", "react-native@>=0.55", "react-native@>=0.56", "react-native@>=0.59", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz":
   "integrity" "sha512-qWR6pcG4yDu/Rthm+DvAS017rL38LbZFnJv/k4HL4ZUH/WhKuqC+stD7TlpaOBb3N2bkydm9s+GCa14T41MLEg=="
   "resolved" "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz"
   "version" "0.63.2"
